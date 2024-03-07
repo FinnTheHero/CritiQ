@@ -1,21 +1,38 @@
 .App {
   	text-align: center;
-	background-color: #282c34;
+	background-color: #11111b;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: #cdd6f4;
 }
 
-.App-link {
-  	color: #61dafb;
+.Link {
+  	color: #fab387;
+	text-decoration: none;
+}
+
+.Link:hover {
+	text-decoration: none;
 }
 
 .Hero {
 	margin: 180px 0 90px 0;
+}
+
+.Title {
+	color: #94e2d5;
+}
+
+.Subtitle {
+	color: #7f849c;
+}
+
+.Text {
+	color: #cdd6f4;
 }
 
 .Card {
@@ -24,9 +41,57 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin: 15px 0;
+	background-color: #141422;
 }
 
-@media (max-width: 550px) {
+.CardBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	padding: 20px;
+}
+
+.Extra {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Button {
+	color: #fab387;
+	background-color: #141422;
+	
+	border-color: #fab387;
+	border-radius: 10px;
+	border-style: solid;
+
+	font-size: smaller;
+	
+	height: 40px;
+	width: 100px;
+}
+
+.Button:hover {
+	color: #141422;
+	border-color: #fab387;
+	background-color: #fab387;
+}
+
+
+.Image { 
+	width: 250px; 
+	height: 250px; 
+	padding: 10px;
+}
+
+@media (max-width: 750px) {
+	.Hero {
+		margin: 90px 0 50px 0;
+	}
+	
 	.Card {
 		height: auto;
 		flex-wrap: wrap;
@@ -39,10 +104,4 @@
 		height: auto; 
 		padding: 0;
 	}
-}
-
-.Image { 
-	width: 250px; 
-	height: 250px; 
-	padding: 10px;
 }

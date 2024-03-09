@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Components
 import DisplayCard from './components/DisplayCard';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 // CSS
 import './App.css';
-import Hero from './components/Hero';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 			<DisplayCard />
 			<DisplayCard />
 			<DisplayCard />
+			<Footer />
 		</div>
 	);
 }

@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 const DisplayCard = () => {
 	return (
 		<Card text="white" className='Card'>
-			<Card.Img src="logo512.png" className='Image'/>
+			<Card.Img src="logo.svg" className='Image'/>
 			<Card.Body className='CardBody'>
 				<Card.Title className='Title'>Name</Card.Title>
 				<Card.Text className='Text'>

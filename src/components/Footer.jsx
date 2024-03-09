@@ -5,12 +5,15 @@ const Footer = () => {
 		<footer className="Footer">
 			<div>
 				<ul className="List">
-					<li className="List-item"><a className="Link" href="#!">About</a></li>
-					<li className="List-item"><a className="Link" href="#!">Contact</a></li>
-					<li className="List-item"><a className="Link" href="#!">Terms of Service</a></li>
-					<li className="List-item"><a className="Link" href="#!">Privacy Policy</a></li>
+					<li><a className="Link" href="#!">About</a></li>
+					<li><a className="Link" href="#!">Contact</a></li>
+					<li><a className="Link" href="#!">Terms of Service</a></li>
+					<li><a className="Link" href="#!">Privacy Policy</a></li>
 				</ul>
-				<p className="Title">&copy; {new Date().getFullYear()} CritiQ. All rights reserved.</p>
+				<div className='Rights'>
+					<img src="logo.svg" alt="logo" />
+					<p className='mx-2'>&copy; {new Date().getFullYear()} CritiQ. All rights reserved.</p>
+				</div>
 			</div>
 		</footer>
 	);

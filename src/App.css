@@ -88,25 +88,43 @@
 }
 
 .Footer {
-	margin-top: 2rem !important;
+	width: 75%;
+	margin-top: 4rem !important;
 	margin-bottom: 1rem !important;
 	list-style: none;
 	font-size: large;
 }
 
+.Footer img {
+	width: 35px;
+	height: 35px;
+}
+
+.Rights {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.Footer p {
+	margin: auto;
+}
+
 .List { 
 	border-top: #7f849c solid 1px;
-	padding-top: 1rem !important;
+	padding-top: 2rem !important;
 	display: flex; 
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly; 
 	align-items: center; 
 	width: 100%; 
-	padding: 0; 
 }
 
-.List-item {
+.List li {
 	list-style: none;
 	margin: 0 15px;
 }
@@ -124,19 +142,16 @@
 	}
 
 	.Image { 
-		max-height: 400px; 
-		height: auto; 
+		width: 200px; 
+		height: 200px; 
+		padding: 5px;
 	}
 
 	.List {
 		flex-direction: column;
 	}
 
-	.List-item {
+	.List li {
 		margin: 15px 0;
-	}
-
-	.Footer p {
-		margin-top: 45px;
 	}
 }

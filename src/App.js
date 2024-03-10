@@ -1,26 +1,24 @@
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 // Components
-import DisplayCard from './components/DisplayCard';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+
+// Data
+import RenderCards from './db/RenderCards';
 
 // CSS
 import './App.css';
 
 function App() {
 	return (
-		<div className="App">
+		<div className='App'>
 			<Hero />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
-			<DisplayCard />
+			
+			<RenderCards />
+
 			<Footer />
 		</div>
 	);

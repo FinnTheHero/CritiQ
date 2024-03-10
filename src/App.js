@@ -1,25 +1,23 @@
+// Standard Imports
+import { Routes, Route } from 'react-router-dom';
+
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-// Components
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-
-// Data
-import RenderCards from './db/RenderCards';
 
 // CSS
 import './App.css';
 
+// Pages
+import Home from './pages/Home';
+import Post from './pages/Post';
+
 function App() {
 	return (
 		<div className='App'>
-			<Hero />
-			
-			<RenderCards />
-
-			<Footer />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/Post' element={<Post />} />	
+			</Routes>
 		</div>
 	);
 }

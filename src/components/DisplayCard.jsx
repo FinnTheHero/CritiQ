@@ -14,7 +14,7 @@ const DisplayCard = () => {
 				Some information.
 				</Card.Text>
 				<div className='Extra'>
-					<h5 className='Subtitle my-auto'>10 Stars</h5>
+					<h5 className='Link my-auto d-flex justify-content-center align-items-center'>10 <img className="Star mx-2" src="star.svg" alt="star"/></h5>
 					<button className='Button'>More</button>
 				</div>
 			</Card.Body>

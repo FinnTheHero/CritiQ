@@ -68,7 +68,7 @@
 	border-radius: 10px;
 	border-style: solid;
 
-	font-size: smaller;
+	font-size: large;
 	
 	height: 40px;
 	width: 100px;
@@ -85,6 +85,11 @@
 	width: 250px; 
 	height: 250px; 
 	padding: 10px;
+}
+
+.Star {
+	width: 20px;
+	height: 20px;
 }
 
 .Footer {

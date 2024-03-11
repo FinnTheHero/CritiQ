@@ -3,23 +3,26 @@ import { useEffect, useState } from 'react';
 // Components
 import DisplayCard from '../components/DisplayCard';
 
+const fetchData = async () => {
+	try {
+		const response = await fetch('https://api.slingacademy.com/v1/sample-data/blog-posts');
+		const jsonData = await response.json();
+		return jsonData;
+	} catch (error) {
+		console.error('Error fetching data:', error);
+	}
+}
+
 const RenderCards = () => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const response = await fetch('https://api.slingacademy.com/v1/sample-data/blog-posts');
-				const jsonData = await response.json();
-				setData(jsonData);
-			} catch (error) {
-				console.error('Error fetching data:', error);
-			}
-		};
-
-		fetchData();
+		fetchData().then((res) => {
+			setData(res);
+		}).catch((error) => {
+			console.error('Error fetching data:', error);
+		});
 	}, []);
-
 
 	return (
 		<div className='App'>
@@ -28,6 +31,9 @@ const RenderCards = () => {
 			))}
 		</div>
 	);
+	
 };
+
+export { fetchData };
 
 export default RenderCards;

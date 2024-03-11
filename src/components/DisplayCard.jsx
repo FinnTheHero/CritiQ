@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Bootstrap components
-// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const DisplayCard = (props) => {
@@ -16,7 +15,7 @@ const DisplayCard = (props) => {
 				</Card.Text>
 				
 				<div className='Extra'>
-					<h5 className='Link my-auto d-flex justify-content-center align-items-center'>10 <img className="Star mx-2" src="star.svg" alt="star"/></h5>
+					<h4 className='Link my-auto d-flex justify-content-center align-items-center'>10 <img className="Star mx-2" src="star.svg" alt="star"/></h4>
 					<button className='Button'>More</button>
 				</div>
 			</Card.Body>

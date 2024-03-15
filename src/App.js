@@ -11,12 +11,18 @@ import './App.css';
 import Home from './pages/Home';
 import Post from './pages/Post';
 
+// Components
+import Navbar from './components/Navbar';
+
 function App() {
 	return (
-		<Routes>
-			<Route path='/' element={<Home />} />
-			<Route path='/post' element={<Post />} />	
-		</Routes>
+		<div>
+			<Navbar />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/post' element={<Post />} />	
+			</Routes>
+		</div>
 	);
 }
 

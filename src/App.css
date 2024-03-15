@@ -17,6 +17,11 @@
 }
 
 .Link:hover {
+	color: #fab387;
+  	text-decoration: none;
+}
+
+.Link:hover {
 	text-decoration: none;
 }
 
@@ -34,6 +39,52 @@
 
 .Text {
 	color: #cdd6f4;
+}
+
+.Navbar {
+	background-color: #181825;
+	color: #cdd6f4;
+}
+
+.Search {
+	margin-right: 10px;
+
+	padding: 10px;
+	
+	color: #fab387;
+	background-color: #141422;
+	
+	border-color: #fab387;
+	border-radius: 10px;
+	border-style: solid;
+
+	font-size: large;
+	
+	height: 40px;
+	width: auto;
+}
+
+.Search:hover {
+	color: #141422;
+	border-color: #fab387;
+	background-color: #fab387;
+}
+
+.Search:focus {
+	color: #141422;
+	border-color: #fab387;
+	background-color: #fab387;
+	outline: none;
+}
+
+.Toggle {
+	background-color: #fab387;
+	border-color: transparent;
+	color: transparent;
+}
+
+.Toggle:focus {
+	outline: none;
 }
 
 .Post {
@@ -231,5 +282,9 @@
 
 	.List li {
 		margin: 15px 0;
+	}
+
+	.Search {
+		margin-bottom: 10px;
 	}
 }

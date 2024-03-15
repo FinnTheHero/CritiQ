@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 import { fetchData } from '../db/RenderCards';
 
-function Post(props) {
+function Post() {
 	const [blogs, setBlogs] = useState('');
 	
 	useEffect(() => {

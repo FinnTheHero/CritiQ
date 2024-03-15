@@ -44,8 +44,11 @@
 .Navbar {
 	background-color: #181825;
 	color: #cdd6f4;
-	font-size: large;
+	
 	padding: 10px 7.5%;
+	
+	font-size: large;
+	font-weight: 500;
 }
 
 .Search {

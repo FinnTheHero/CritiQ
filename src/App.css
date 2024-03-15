@@ -48,7 +48,7 @@
 }
 
 .Search {
-	margin-right: 10px;
+	margin-right: 0px;
 
 	padding: 10px;
 	
@@ -56,27 +56,38 @@
 	background-color: #141422;
 	
 	border-color: #fab387;
-	border-radius: 10px;
+	border-radius: 10px 0 0 10px;
 	border-style: solid;
+	border-width: 2px 1px 2px 2px;
 
 	font-size: large;
 	
 	height: 40px;
 	width: auto;
+
+	outline: none;
 }
 
 .Search:hover {
 	color: #141422;
-	border-color: #fab387;
 	background-color: #fab387;
 }
 
-.Search:focus {
+.SearchButton {
 	color: #141422;
-	border-color: #fab387;
 	background-color: #fab387;
-	outline: none;
+	
+	border-color: #fab387;
+	border-radius: 0 10px 10px 0;
+	border-style: solid;
+	border-width: 2px;
+
+	font-size: large;
+	
+	height: 40px;
+	width: 40px;
 }
+
 
 .Toggle {
 	background-color: #fab387;

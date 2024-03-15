@@ -2,6 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
 function NavScrollExample() {
 	return (
 		<Navbar expand="lg" className="Navbar" rounded>
@@ -15,13 +18,14 @@ function NavScrollExample() {
 					navbarScroll
 				>
 					<Nav.Link className='Link' href="/">Home</Nav.Link>
-					<Nav.Link className='Link' href="/post">post</Nav.Link>
+					<Nav.Link className='Link' href="/post">Post</Nav.Link>
 				</Nav>
 				<input 
 					type="search"
 					placeholder="Search"
-					className="Search" />
-				<button className='Button'>Search</button>
+					className="Search"
+				/>
+				<button className='SearchButton'><FontAwesomeIcon icon={faSearch} /></button>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

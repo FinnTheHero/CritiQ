@@ -74,6 +74,11 @@
 	background-color: #fab387;
 }
 
+.Search:focus {
+	color: #141422;
+	background-color: #fab387;
+}
+
 .SearchButton {
 	color: #141422;
 	background-color: #fab387;

@@ -7,8 +7,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 function NavScrollExample() {
 	return (
-		<Navbar expand="lg" className="Navbar" rounded>
-			<Container className='Container'>
+		<Navbar sticky='top' expand="lg" className="Navbar" rounded>
+			<Container fluid className='Container'>
 				<Navbar.Brand href="/"><img style={{width: '40px', height: '40px'}} src="logo.svg" alt="logo" /></Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" className='Toggle'/>
 				<Navbar.Collapse id="navbarScroll">
@@ -20,12 +20,14 @@ function NavScrollExample() {
 					<Nav.Link className='Link' href="/">Home</Nav.Link>
 					<Nav.Link className='Link' href="/post">Post</Nav.Link>
 				</Nav>
-				<input 
-					type="search"
-					placeholder="Search"
-					className="Search"
-				/>
-				<button className='SearchButton'><FontAwesomeIcon icon={faSearch} /></button>
+				<div className='SearchBar'>
+					<input 
+						type="search"
+						placeholder="Search"
+						className="Search"
+					/>
+					<button className='SearchButton'><FontAwesomeIcon icon={faSearch} /></button>
+				</div>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

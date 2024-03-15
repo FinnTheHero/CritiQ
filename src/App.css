@@ -45,6 +45,7 @@
 	background-color: #181825;
 	color: #cdd6f4;
 	font-size: large;
+	padding: 10px 7.5%;
 }
 
 .Search {
@@ -296,7 +297,21 @@
 		margin: 15px 0;
 	}
 
+	.SearchBar {
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 10px 0;
+	}
+	
 	.Search {
-		margin-bottom: 10px;
+		width: 80%;
+	}
+
+	.Navbar {
+		padding: 6px 5%;
 	}
 }

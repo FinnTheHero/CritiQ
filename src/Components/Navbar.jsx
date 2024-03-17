@@ -4,12 +4,16 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import CritiQLogo from '../Icons/CritiQLogo';
 
 function NavScrollExample() {
 	return (
 		<Navbar sticky='top' expand="lg" className="Navbar" rounded>
 			<Container fluid className='Container'>
-				<Navbar.Brand href="/"><img style={{width: '40px', height: '40px'}} src="logo.svg" alt="logo" /></Navbar.Brand>
+				<Navbar.Brand href="/">
+					<CritiQLogo width={40} height={40} />
+				</Navbar.Brand>
+				
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" className='Toggle'/>
 				<Navbar.Collapse id="navbarScroll">
 				<Nav

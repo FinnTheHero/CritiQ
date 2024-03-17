@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Pages
-import Home from './pages/Home';
-import Post from './pages/Post';
+import Home from './Pages/Home';
+import Post from './Pages/Post';
 
 // Components
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 
 function App() {
 	return (

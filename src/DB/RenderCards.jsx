@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // Components
-import DisplayCard from '../components/DisplayCard';
+import DisplayCard from '../Components/DisplayCard';
 
 const fetchData = async () => {
 	try {

@@ -286,6 +286,7 @@
 	
 	.Card {
 		height: auto;
+		width: 85%;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
@@ -320,6 +321,6 @@
 	}
 
 	.Navbar {
-		padding: 6px 5%;
+		padding: 6px 3%;
 	}
 }

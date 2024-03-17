@@ -1,9 +1,9 @@
 // Components
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import Hero from '../Components/Hero';
+import Footer from '../Components/Footer';
 
 // Data
-import RenderCards from '../db/RenderCards';
+import RenderCards from '../DB/RenderCards';
 
 function Home() {
 	return (

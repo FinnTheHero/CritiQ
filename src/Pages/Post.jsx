@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 // Bootstrap components
 import Card from 'react-bootstrap/Card';
 
-import { fetchData } from '../db/RenderCards';
+import { fetchData } from '../DB/RenderCards';
 
 function Post() {
 	const [blogs, setBlogs] = useState('');
